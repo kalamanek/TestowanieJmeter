@@ -17,10 +17,6 @@
 	
 	cd GitTemp
 	
-	Write-Host "reunning tests"
 	$time = "app_"+(Get-Date -UFormat " %H - %M - %S").ToString()
 	mvn test --log-file $time".txt"
 	 
-	Write-Host "test done"
-	
-	Start-Sleep -s 10
